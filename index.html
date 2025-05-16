@@ -7,36 +7,29 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         body {
-            background-color: #f0f4f8; /* Soft light blue-gray background */
-            color: #222; /* Dark text for contrast */
+            background-color: #f0f4f8;
+            color: #222;
             font-family: Arial, sans-serif;
         }
 
         #header {
-            background: #2c3e50; /* Dark blue-gray background for header */
-            color: #fff;
-            padding: 2rem 1rem;
+            background-image: url('https://raw.githubusercontent.com/ernestyesufu/ernestyesufu.github.io/main/git%20foto.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        #header .image.avatar img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%; /* Circle avatar */
-            border: 4px solid #fff;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-            object-fit: cover;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        a {
-            color: #2c3e50; /* Make links match header color */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        #header .inner {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
         }
 
         h1, h2, h3 {
@@ -57,15 +50,22 @@
         .button:hover {
             background-color: #1b2838;
         }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="is-preload">
 <header id="header">
     <div class="inner">
-         <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-        <h1><strong>Ernest Yesufu</strong><br />
-        Data Analyst | Python, Excel, SQL & Power BI<br />
-         </h1>
+        <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Ernest Yesufu</h1>
+        <h2 style="font-size: 1.5rem;">Data Analyst | Python, Excel, SQL & Power BI</h2>
     </div>
 </header>
 <div id="main">
@@ -82,21 +82,18 @@
     <section id="two">
         <h2>Portfolio Projects</h2>
         <div class="row">
-            <!-- Spotify Most Streamed Songs 2024 Dashboard -->
             <article class="col-6 col-12-xsmall work-item">
                 <a href="images/fulls/spotify.jpg" class="image fit thumb"><img src="images/thumbs/spotify.jpg" alt="" /></a>
                 <h3><a href="spotify-most-streamed/index.html">Most Streamed Spotify Songs 2024</a></h3>
                 <p>Analyzed Spotify's most streamed songs in 2024 using Power BI.</p>
             </article>
 
-            <!-- Sales Performance Dashboard -->
             <article class="col-6 col-12-xsmall work-item">
                 <a href="images/fulls/sales_performance.jpg" class="image fit thumb"><img src="images/thumbs/sales_performance.jpg" alt="" /></a>
                 <h3><a href="sales-performance-dashboard/index.html">Sales Performance Dashboard</a></h3>
                 <p>Designed an interactive Power BI dashboard to analyze regional and product-level sales performance.</p>
             </article>
 
-            <!-- Retail Sales and Payment Analysis -->
             <article class="col-6 col-12-xsmall work-item">
                 <a href="images/fulls/retail_analysis.jpg" class="image fit thumb"><img src="images/thumbs/retail_analysis.jpg" alt="" /></a>
                 <h3><a href="retail-sales-payment-analysis/index.html">Retail Sales & Payment Analysis</a></h3>
