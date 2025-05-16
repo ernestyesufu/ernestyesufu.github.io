@@ -1,190 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ernest Yesufu | Data Analyst Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     body {
-      background-color: #f0f4f8;
-      color: #222;
       font-family: Arial, sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
 
-    #header {
-      background: url('https://raw.githubusercontent.com/ernestyesufu/ernestyesufu.github.io/main/git%20foto.png') center center / cover no-repeat;
-      color: #fff;
+    header {
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 3rem 1rem 2rem;
+      background-color: #ffffff;
     }
 
-    #header .image.avatar img {
+    .avatar {
       width: 140px;
       height: 140px;
       border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
       object-fit: cover;
+      border: 4px solid #2c3e50;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem;
     }
 
-    h1, h2, h3 {
-      font-weight: bold;
-    }
-
-    a {
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
       color: #2c3e50;
-      text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    h2 {
+      color: #2c3e50;
+      margin-top: 2rem;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 1rem;
     }
 
     .button {
       background-color: #2c3e50;
-      color: white;
+      color: #fff;
       padding: 10px 18px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
       text-decoration: none;
+      border-radius: 4px;
       display: inline-block;
+      margin-top: 1rem;
     }
 
     .button:hover {
       background-color: #1b2838;
     }
 
+    form {
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f0f4f8;
+      font-size: 0.9rem;
+    }
+
     #thank-you {
       display: none;
       color: green;
-      margin-top: 20px;
       font-weight: bold;
+      margin-top: 1rem;
     }
   </style>
 </head>
-<body class="is-preload">
+<body>
 
-<!-- Header -->
-<header id="header">
-  <div class="inner">
-    <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Ernest Avatar" /></a>
-    <h1><strong>Ernest Yesufu</strong><br />
-    Data Analyst | Python, Excel, SQL & Power BI</h1>
-  </div>
+<header>
+  <img src="images/avatar.jpg" alt="Ernest Yesufu" class="avatar" />
+  <h1>Ernest Yesufu</h1>
+  <p>Data Analyst | Python, SQL, Power BI, Excel</p>
 </header>
 
-<!-- Main -->
-<div id="main">
-
-  <!-- Intro -->
-  <section id="one">
-    <header class="major">
-      <h2>Hi, I'm Ernest!</h2>
-      <p>I analyze and visualize data to uncover insights and drive business decisions.</p>
-    </header>
-    <p>I specialize in transforming raw data into actionable intelligence. With skills in Python, PostgreSQL, and Power BI, I develop automated data pipelines, clean and model data, and deliver compelling dashboards and reports.</p>
-    <ul class="actions">
-      <li><a href="#two" class="button">Explore My Work</a></li>
-    </ul>
+<main>
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I analyze and visualize data to uncover insights and drive business decisions. I specialize in transforming raw data into actionable intelligence using Python, PostgreSQL, Power BI, and Excel.</p>
+    <a href="#projects" class="button">Explore My Work</a>
   </section>
 
-  <!-- Projects -->
-  <section id="two">
+  <section class="section" id="projects">
     <h2>Portfolio Projects</h2>
-    <div class="row">
-
-      <!-- Spotify Project -->
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="images/fulls/spotify.jpg" class="image fit thumb"><img src="images/thumbs/spotify.jpg" alt="" /></a>
+    <div class="projects">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/thumbs/spotify.jpg" alt="Spotify Project Thumbnail">
         <h3><a href="spotify-most-streamed/index.html">Most Streamed Spotify Songs 2024</a></h3>
-        <p>Analyzed Spotify's most streamed songs in 2024 using Power BI.</p>
-      </article>
+        <p>Analyzed Spotify's most streamed songs using Power BI to reveal top-performing genres and artists.</p>
+      </div>
 
-      <!-- Sales Performance Project -->
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="images/fulls/sales_performance.jpg" class="image fit thumb"><img src="images/thumbs/sales_performance.jpg" alt="" /></a>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/thumbs/sales_performance.jpg" alt="Sales Performance Thumbnail">
         <h3><a href="sales-performance-dashboard/index.html">Sales Performance Dashboard</a></h3>
-        <p>Designed an interactive Power BI dashboard to analyze regional and product-level sales performance.</p>
-      </article>
+        <p>Built a dynamic dashboard using Power BI to analyze regional sales trends and key metrics.</p>
+      </div>
 
-      <!-- Retail Sales Project -->
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="images/fulls/retail_analysis.jpg" class="image fit thumb"><img src="images/thumbs/retail_analysis.jpg" alt="" /></a>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/thumbs/retail_analysis.jpg" alt="Retail Analysis Thumbnail">
         <h3><a href="retail-sales-payment-analysis/index.html">Retail Sales & Payment Analysis</a></h3>
-        <p>Used Python, PostgreSQL, and Power BI to clean, analyze, and visualize sales and payment data.</p>
-      </article>
-
+        <p>Used Python, PostgreSQL, and Power BI to transform and visualize retail transaction data.</p>
+      </div>
     </div>
-    <ul class="actions">
-      <li><a href="https://github.com/ernestyesufu" target="_blank" class="button">View GitHub</a></li>
-    </ul>
+    <a href="https://github.com/ernestyesufu" target="_blank" class="button">View GitHub</a>
   </section>
 
-  <!-- Contact -->
-  <section id="three">
+  <section class="section" id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out!</p>
-    <div class="row">
-      <div class="col-8 col-12-small">
-        <form method="POST" action="https://formspree.io/f/xovdrlkb" id="contact-form">
-          <div class="row gtr-uniform gtr-50">
-            <div class="col-6 col-12-xsmall">
-              <input type="text" name="name" placeholder="Your Name" required />
-            </div>
-            <div class="col-6 col-12-xsmall">
-              <input type="email" name="email" placeholder="Your Email" required />
-            </div>
-            <div class="col-12">
-              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <div class="col-12">
-              <ul class="actions">
-                <li><input type="submit" value="Send Message" class="button" /></li>
-              </ul>
-            </div>
-          </div>
-        </form>
-
-        <div id="thank-you">
-          Thank you! Your message has been sent successfully.
-        </div>
-
-        <script>
-        document.getElementById("contact-form").addEventListener("submit", async function(e) {
-          e.preventDefault();
-          const form = e.target;
-          const data = new FormData(form);
-          const action = form.action;
-          const response = await fetch(action, {
-            method: form.method,
-            body: data,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          if (response.ok) {
-            form.style.display = 'none';
-            document.getElementById("thank-you").style.display = 'block';
-          } else {
-            alert("Oops! Something went wrong.");
-          }
+    <p>Let's connect — feel free to send me a message!</p>
+    <form method="POST" action="https://formspree.io/f/xovdrlkb" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="button" />
+    </form>
+    <div id="thank-you">Thank you! Your message has been sent successfully.</div>
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
         });
-        </script>
-      </div>
-
-      <div class="col-4 col-12-small">
-        <ul class="labeled-icons">
-          <li><h3>Email</h3><a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a></li>
-          <li><h3>GitHub</h3><a href="https://github.com/ernestyesufu">github.com/ernestyesufu</a></li>
-        </ul>
-      </div>
-    </div>
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById("thank-you").style.display = 'block';
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      });
+    </script>
   </section>
-</div>
+</main>
+
+<footer>
+  <p>📧 <a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a> &nbsp;|&nbsp;
+     🔗 <a href="https://github.com/ernestyesufu" target="_blank">GitHub</a></p>
+</footer>
 
 </body>
 </html>
