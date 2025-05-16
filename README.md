@@ -30,5 +30,5 @@ I'm Ernest Yesufu, a data analyst based in the United Kingdom. I specialize in t
 
 ## 📬 Contact
 
-- 📧 Email: [ernestyesufu99@gmail.com](mailto:ernestyesufu99@gmail.com)
-- 🐙 GitHub: [github.com/ernestyesufu](https://github.com/ernestyesufu)
+- 📧 Email: ernestyesufu99@gmail.com
+- 🐙 GitHub: https://ernestyesufu.github.io/
