@@ -1,188 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernest Yesufu | Data Analyst Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-            padding: 0 1rem;
-        }
-
-        header {
-            background: #111;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        header .avatar {
-            width: 100px;
-            height: 100px;
+        /* Avatar styling */
+        .avatar img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 1rem;
-        }
-
-        header img {
-            width: 100%;
-            height: auto;
-        }
-
-        header h1 {
-            font-size: 1.8rem;
-            font-weight: 800;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #111;
-        }
-
-        .actions .button {
-            display: inline-block;
-            background: #0077cc;
-            color: #fff;
-            padding: 0.7rem 1.2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .actions .button:hover {
-            background: #005fa3;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        .work-item {
-            flex: 1 1 calc(33% - 1rem);
-            background: #fff;
-            padding: 1rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
             transition: transform 0.3s ease;
         }
-
-        .work-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .work-item img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 0.8rem;
-        }
-
-        .work-item h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .work-item a {
-            text-decoration: none;
-            color: #0077cc;
-        }
-
-        .labeled-icons h3 {
-            margin-bottom: 0.3rem;
-            font-weight: 600;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.6rem;
-            margin-bottom: 1rem;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-
-        @media (max-width: 768px) {
-            .work-item {
-                flex: 1 1 100%;
-            }
+        .avatar img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-
-<body>
-    <header>
+<body class="is-preload">
+<header id="header">
+    <div class="inner">
         <div class="avatar">
-            <img src="images/avatar.jpg" alt="Ernest Avatar">
+            <img src="images/avatar.jpg" alt="Ernest Yesufu" />
         </div>
-        <h1>Ernest Yesufu<br>Data Analyst | Python, Excel, SQL & Power BI<br>United Kingdom</h1>
-    </header>
-
-    <section>
-        <h2>Hi, I'm Ernest!</h2>
-        <p>I analyze and visualize data to uncover insights and drive business decisions.</p>
+        <h1><strong>Ernest Yesufu</strong><br />
+        Data Analyst | Python, Excel, SQL & Power BI<br />
+         United Kingdom</h1>
+    </div>
+</header>
+<div id="main">
+    <section id="one">
+        <header class="major">
+            <h2>Hi, I'm Ernest!<br />
+            I analyze and visualize data to uncover insights and drive business decisions.</h2>
+        </header>
         <p>I specialize in transforming raw data into actionable intelligence. With skills in Python, PostgreSQL, and Power BI, I develop automated data pipelines, clean and model data, and deliver compelling dashboards and reports.</p>
-        <div class="actions">
-            <a href="#portfolio" class="button">Explore My Work</a>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio Projects</h2>
-        <div class="row">
-            <div class="work-item">
-                <img src="images/thumbs/spotify.jpg" alt="Spotify Dashboard">
-                <h3><a href="spotify-most-streamed/index.html">Most Streamed Spotify Songs 2024</a></h3>
-                <p>Analyzed Spotify's most streamed songs in 2024 using Power BI.</p>
-            </div>
-            <div class="work-item">
-                <img src="images/thumbs/sales_performance.jpg" alt="Sales Dashboard">
-                <h3><a href="sales-performance-dashboard/index.html">Sales Performance Dashboard</a></h3>
-                <p>Designed an interactive Power BI dashboard to analyze regional and product-level sales performance.</p>
-            </div>
-            <div class="work-item">
-                <img src="images/thumbs/retail_analysis.jpg" alt="Retail Analysis">
-                <h3><a href="retail-sales-payment-analysis/index.html">Retail Sales & Payment Analysis</a></h3>
-                <p>Used Python, PostgreSQL, and Power BI to clean, analyze, and visualize sales and payment data.</p>
-            </div>
-        </div>
-        <div class="actions" style="margin-top: 1.5rem;">
-            <a href="https://github.com/ernestyesufu" target="_blank" class="button">View GitHub</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
-        <form>
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email">
-            <textarea name="message" rows="4" placeholder="Message"></textarea>
-            <input type="submit" value="Send Message" class="button">
-        </form>
-        <ul class="labeled-icons" style="margin-top: 1rem;">
-            <li><h3>Email</h3><a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a></li>
-            <li><h3>GitHub</h3><a href="https://github.com/ernestyesufu">github.com/ernestyesufu</a></li>
+        <ul class="actions">
+            <li><a href="#two" class="button">Explore My Work</a></li>
         </ul>
     </section>
-</body>
+    <section id="two">
+        <h2>Portfolio Projects</h2>
+        <div class="row">
+            <!-- Spotify Most Streamed Songs 2024 Dashboard -->
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/spotify.jpg" class="image fit thumb"><img src="images/thumbs/spotify.jpg" alt="" /></a>
+                <h3><a href="spotify-most-streamed/index.html">Most Streamed Spotify Songs 2024</a></h3>
+                <p>Analyzed Spotify's most streamed songs in 2024 using Power BI.</p>
+            </article>
 
+            <!-- Sales Performance Dashboard -->
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/sales_performance.jpg" class="image fit thumb"><img src="images/thumbs/sales_performance.jpg" alt="" /></a>
+                <h3><a href="sales-performance-dashboard/index.html">Sales Performance Dashboard</a></h3>
+                <p>Designed an interactive Power BI dashboard to analyze regional and product-level sales performance.</p>
+            </article>
+
+            <!-- Retail Sales and Payment Analysis -->
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/retail_analysis.jpg" class="image fit thumb"><img src="images/thumbs/retail_analysis.jpg" alt="" /></a>
+                <h3><a href="retail-sales-payment-analysis/index.html">Retail Sales & Payment Analysis</a></h3>
+                <p>Used Python, PostgreSQL, and Power BI to clean, analyze, and visualize sales and payment data.</p>
+            </article>
+        </div>
+        <ul class="actions">
+            <li><a href="https://github.com/ernestyesufu" target="_blank" class="button">View GitHub</a></li>
+        </ul>
+    </section>
+    <section id="three">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <div class="row">
+            <div class="col-8 col-12-small">
+                <form method="post" action="#">
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="col-4 col-12-small">
+                <ul class="labeled-icons">
+                    <li><h3>Email</h3><a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a></li>
+                    <li><h3>GitHub</h3><a href="https://github.com/ernestyesufu">github.com/ernestyesufu</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
 </html>
