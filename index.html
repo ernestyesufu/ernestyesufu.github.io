@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ernest Yesufu | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #1f3a93, #4b77be); /* Darker colorful background */
-      color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 2rem 1rem;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
     }
 
     .avatar {
@@ -24,204 +24,154 @@
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      border: 4px solid #2c3e50;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       margin-bottom: 1rem;
     }
 
     h1 {
       margin: 0;
-      font-size: 2rem;
-      color: #fff;
+      font-size: 1.8rem;
+      color: #2c3e50;
     }
 
-    h2 {
-      color: #ffe082;
-      margin-top: 2rem;
-    }
-
-    p {
-      color: #e0e0e0;
+    h2, h3 {
+      color: #2c3e50;
     }
 
     .section {
       padding: 2rem 1rem;
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
     }
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
 
-    .project-card {
+    .project {
       background: #fff;
-      color: #333;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      padding: 1rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
-      transition: transform 0.2s ease-in-out;
+      padding: 1rem;
     }
 
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card img {
-      width: 100%;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-    }
-
-    .project-card h3 a {
-      color: #2c3e50;
-      text-decoration: none;
-    }
-
-    .project-card h3 a:hover {
-      text-decoration: underline;
+    .project img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
     }
 
     .button {
-      background-color: #ffe082;
-      color: #2c3e50;
-      padding: 10px 18px;
-      text-decoration: none;
-      border-radius: 4px;
       display: inline-block;
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 0.5rem 1rem;
       margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background-color: #ffca28;
-    }
-
-    form {
-      margin-top: 1rem;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: none;
       border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    input:focus, textarea:focus {
-      outline: 2px solid #ffe082;
+      text-decoration: none;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #152f4a;
-      color: #ccc;
       font-size: 0.9rem;
+      background: #eee;
     }
 
-    footer a {
-      color: #ffe082;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    #thank-you {
-      display: none;
-      color: #8bc34a;
-      font-weight: bold;
+    form {
+      display: grid;
+      gap: 1rem;
       margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="images/avatar.jpg" alt="Ernest Yesufu" class="avatar" />
-  <h1>Ernest Yesufu</h1>
-  <p>Data Analyst | Python · SQL · Power BI · Excel</p>
-</header>
+  <!-- Header -->
+  <header>
+    <img class="avatar" src="https://raw.githubusercontent.com/ernestyesufu/ernestyesufu.github.io/main/git%20foto.png" alt="Ernest Yesufu Avatar" />
+    <h1>Ernest Yesufu</h1>
+    <p>Data Analyst | Python, Excel, SQL & Power BI</p>
+  </header>
 
-<main>
+  <!-- About Section -->
   <section class="section">
     <h2>About Me</h2>
-    <p>I analyze and visualize data to uncover insights and drive business decisions. I specialize in transforming raw data into actionable intelligence using Python, PostgreSQL, Power BI, and Excel.</p>
-    <a href="#projects" class="button">Explore My Work</a>
+    <p>I analyze and visualize data to uncover insights and drive business decisions. I specialize in transforming raw data into actionable intelligence using tools like Python, PostgreSQL, and Power BI.</p>
   </section>
 
-  <section class="section" id="projects">
+  <!-- Portfolio Section -->
+  <section class="section">
     <h2>Portfolio Projects</h2>
     <div class="projects">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="images/thumbs/spotify.jpg" alt="Spotify Project Thumbnail">
+      <div class="project">
+        <img src="images/thumbs/spotify.jpg" alt="Spotify Dashboard">
         <h3><a href="spotify-most-streamed/index.html">Most Streamed Spotify Songs 2024</a></h3>
-        <p>Analyzed Spotify's most streamed songs using Power BI to uncover patterns by genre and artist.</p>
+        <p>Analyzed Spotify’s most streamed songs using Power BI.</p>
       </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="images/thumbs/sales_performance.jpg" alt="Sales Performance Thumbnail">
+      <div class="project">
+        <img src="images/thumbs/sales_performance.jpg" alt="Sales Dashboard">
         <h3><a href="sales-performance-dashboard/index.html">Sales Performance Dashboard</a></h3>
-        <p>Created a dashboard in Power BI to track sales KPIs by region, product, and channel.</p>
+        <p>Interactive dashboard for regional and product-level sales performance.</p>
       </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="images/thumbs/retail_analysis.jpg" alt="Retail Analysis Thumbnail">
+      <div class="project">
+        <img src="images/thumbs/retail_analysis.jpg" alt="Retail Analysis">
         <h3><a href="retail-sales-payment-analysis/index.html">Retail Sales & Payment Analysis</a></h3>
-        <p>Built an end-to-end project using Python, SQL, and Power BI to analyze sales and payment trends.</p>
+        <p>Used Python, SQL, and Power BI to clean and analyze sales/payment data.</p>
       </div>
     </div>
-    <a href="https://github.com/ernestyesufu" target="_blank" class="button">View GitHub</a>
+    <a class="button" href="https://github.com/ernestyesufu" target="_blank">View GitHub</a>
   </section>
 
-  <section class="section" id="contact">
+  <!-- Contact Section -->
+  <section class="section">
     <h2>Contact</h2>
-    <p>Let’s connect — feel free to send a message!</p>
-    <form method="POST" action="https://formspree.io/f/xovdrlkb" id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
+    <p>Feel free to reach out to me using the form below:</p>
+    <form action="https://formspree.io/f/xovdrlkb" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="button" />
+      <button class="button" type="submit">Send Message</button>
     </form>
-    <div id="thank-you">✅ Thank you! Your message has been sent.</div>
-    <script>
-      document.getElementById("contact-form").addEventListener("submit", async function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          form.reset();
-          form.style.display = 'none';
-          document.getElementById("thank-you").style.display = 'block';
-        } else {
-          alert("Oops! Something went wrong.");
-        }
-      });
-    </script>
   </section>
-</main>
 
-<footer>
-  <p>
-    📧 <a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a> &nbsp;|&nbsp;
-    🔗 <a href="https://github.com/ernestyesufu" target="_blank">GitHub</a>
-  </p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>Email: <a href="mailto:ernestyesufu99@gmail.com">ernestyesufu99@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ernestyesufu" target="_blank">github.com/ernestyesufu</a></p>
+    <p>&copy; 2025 Ernest Yesufu. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
